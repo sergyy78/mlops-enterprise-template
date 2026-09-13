@@ -1,15 +1,15 @@
-# Conda environment specification. Details about the Conda environment file format:
-# https://conda.io/docs/user-guide/tasks/manage-environments.html#create-env-file-manually
-
 name: training_env
+channels:
+  - conda-forge
 dependencies:
   - python=3.6.2
+  - pip=21.3.1            # list pip explicitly; your build log warns about this
   - scikit-learn=0.23.1
   - matplotlib=3.2.2
   - numpy=1.19.0
   - pip:
-    - azureml-defaults==1.21.0
-    - azureml-core==1.21.0
-    - azureml-dataset-runtime==1.21.0
-channels:
-  - conda-forge
+    # 1.45.0 is the LAST SDK v1 release that supports Python 3.6.
+    # azureml-defaults removed: it is the inference/scoring package
+    # (flask + gunicorn + inference-server-http) and is not needed to train.
+    - azureml-core==1.45.0
+    - azureml-dataset-runtime[fuse]==1.45.0
