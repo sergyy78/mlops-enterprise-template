@@ -1,4 +1,4 @@
-name: Model deployment
+name: Model Deployment
 
 on:
   repository_dispatch:
