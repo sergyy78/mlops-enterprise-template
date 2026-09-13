@@ -12,8 +12,8 @@ on:
 #   AZURE_RESOURCE_GROUP 
 #   STORAGE_ACCOUNT 
 env:
-  AZURE_RESOURCE_GROUP: OH-Demo-RG  #set this to your resource group name 
-  #STORAGE_ACCOUNT: storage-account-name           #set this to your storage-account-name
+  AZURE_RESOURCE_GROUP: sk-mlops-workshop-rg #set this to your resource group name 
+  STORAGE_ACCOUNT: skmlopsworkshopsa           #set this to your storage-account-name
     
 jobs:
   deployment:
