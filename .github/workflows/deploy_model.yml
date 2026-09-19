@@ -44,7 +44,7 @@ jobs:
              azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
              run_id:  ${{ github.event.client_payload.data.runId }}
              #experiment_name: ${{ github.event.client_payload.data.experimentName }}
-             experiment_name: "mlops-enterprise-template-main_1789813540_c86627c6"
+             experiment_name: "mlops-enterprise-template-main"
 
       # Deploy your model to dev (this is optional)
       - name: Dev Deploy
