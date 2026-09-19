@@ -3,7 +3,7 @@ name: Model Deployment
 # on:
 #   repository_dispatch:
 #     types: [machinelearningservices-runcompleted]
-
+#
 on:
   push:
     paths:
